@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/etm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/etm/etm_{{ version }}.tar.gz
-  sha256: e718cc51bafbb8a69fcf57becee18d265e7261c224474b6aa04c46e0115e3bfa
+  sha256: a7e6ef848a2674679662ceb8562d17e90915f2c7ecc5ace005a5e97344bd8154
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,6 +54,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=etm
   license: MIT
+  license_file: LICENSE
   summary: 'The etm (empirical transition matrix) package permits to estimate the matrix of transition
     probabilities for any time-inhomogeneous multistate model with finite state space
     using the Aalen-Johansen estimator. Functions for data preparation and for displaying
