@@ -31,6 +31,7 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
+    - libblas
     - r-base
     - r-rcpp >=0.11.4
     - r-rcpparmadillo
@@ -63,11 +64,6 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
 
 # Package: etm
 # Type: Package
