@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/etm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/etm/etm_{{ version }}.tar.gz
-  sha256: fe75df23b986b885d8b4a11190b715f2e7b5e4063c0f63a29457cadb2abd79c3
+  sha256: b2278c7eaa1f1813d4cbb02ba6e3bd112517428dcdea0f0938c436bc992a6d65
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
